@@ -17,10 +17,10 @@ title: Faulkner
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Faulkner exhibit marketing page
-baseurl: "faulkner" # the subpath of your site, e.g. /blog
-url: "http://uvalib-github.io" # the base hostname & protocol for your site
-twitter_username: tony-jones
-github_username:  tony-jones
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+twitter_username: uvalibrary
+github_username:  uvalib
 
 # Build settings
 markdown: kramdown
