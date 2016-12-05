@@ -40,6 +40,6 @@ $ htmlproofer ./_site
 ```
 
 [license-image]: https://img.shields.io/badge/license-ISC-blue.svg
-[license-url]: https://github.com/tony-jones/faulkner/blob/master/LICENSE
-[travis-image]: https://travis-ci.org/tony-jones/faulkner.svg?branch=master
-[travis-url]: https://travis-ci.org/tony-jones/faulkner
+[license-url]: https://github.com/uvalib/faulkner/blob/master/LICENSE
+[travis-image]: https://travis-ci.org/uvalib/faulkner.svg?branch=master
+[travis-url]: https://travis-ci.org/uvalib/faulkner
