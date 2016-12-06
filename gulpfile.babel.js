@@ -4,8 +4,34 @@ import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import runSequence from 'run-sequence';
 import browserSync from 'browser-sync';
+import access from 'gulp-accessibility';
 import swPrecache from 'sw-precache';
+//import rename from 'gulp-rename';
+var rename = require("gulp-rename");
+
 const $ = gulpLoadPlugins();
+
+// Test our website accessibility 
+gulp.task('test', function() {
+  return gulp.src('./_site/**/*.html')
+    .pipe(access({
+      force: true,
+      verbose: false,
+      options: {
+          accessibilityLevel: 'WCAG2AA',
+          reportLocation: 'accessibility-reports',
+          reportLevels: {
+              notice: true,
+              warning: true,
+              error: true
+          }
+      }
+    }))
+    .on('error', console.log)
+    .pipe(access.report({reportType: 'txt'}))
+    .pipe(rename({extname: '.txt'}))
+    .pipe(gulp.dest('reports/json'));
+});
 
 // Minify the HTML.
 gulp.task('minify-html', () => {
