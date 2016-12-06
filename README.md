@@ -34,10 +34,15 @@ $ npm run gulp deploy
 
 ## Tests
 
-If you want to run the tests on your local machine please install `gem install html-proofer`. And then run the tests using
+```shell
+$ npm run gulp accessibility
+```
+
+If you want to run the HTML tests on your local machine please install `gem install html-proofer`. And then run the tests using
 ```shell
 $ htmlproofer ./_site
 ```
+
 
 [license-image]: https://img.shields.io/badge/license-ISC-blue.svg
 [license-url]: https://github.com/uvalib/faulkner/blob/master/LICENSE

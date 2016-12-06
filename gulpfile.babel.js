@@ -12,7 +12,7 @@ var rename = require("gulp-rename");
 const $ = gulpLoadPlugins();
 
 // Test our website accessibility 
-gulp.task('test', function() {
+gulp.task('accessibility', function() {
   return gulp.src('./_site/**/*.html')
     .pipe(access({
       force: true,
