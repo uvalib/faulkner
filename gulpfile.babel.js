@@ -104,7 +104,7 @@ gulp.task('scss', () => {
 });
 
 // Watch change in files.
-gulp.task('serve', ['jekyll-build-dev'], () => {
+gulp.task('serve', ['jekyll-build'], () => {
   browserSync.init({
     notify: false,
     // Run as an https by uncommenting 'https: true'
@@ -143,15 +143,13 @@ gulp.task('generate-service-worker', function(callback) {
   }, callback);
 });
 
-gulp.task('jekyll-build-dev', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config_dev.yml' ]));
-
-gulp.task('jekyll-build-prod', ['scripts', 'scss'], $.shell.task([ 'jekyll build' ]));
+gulp.task('jekyll-build', ['scripts', 'scss'], $.shell.task([ 'jekyll build' ]));
 
 // Default task.
 gulp.task('build', () =>
   runSequence(
     'scss',
-    'jekyll-build-dev',
+    'jekyll-build',
     'minify-html',
     'css',
     'generate-service-worker',
@@ -168,7 +166,7 @@ gulp.task('gh-pages', () => {
 gulp.task('deploy', () => {
   runSequence(
     'scss',
-    'jekyll-build-prod',
+    'jekyll-build',
     'minify-html',
     'css',
     'generate-service-worker',
