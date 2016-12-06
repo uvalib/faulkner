@@ -145,7 +145,7 @@ gulp.task('generate-service-worker', function(callback) {
 
 gulp.task('jekyll-build-dev', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config_dev.yml' ]));
 
-gulp.task('jekyll-build-prod', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config.yml' ]));
+gulp.task('jekyll-build-prod', ['scripts', 'scss'], $.shell.task([ 'jekyll build' ]));
 
 // Default task.
 gulp.task('build', () =>
