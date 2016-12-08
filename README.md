@@ -7,13 +7,16 @@
 
 To install this project, you'll need the following things installed on your machine.
 
-1. [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
-2. [NodeJS](http://nodejs.org) - use the installer.
+* [Jekyll](http://jekyllrb.com/) - `$ gem install jekyll`
+* [NodeJS](http://nodejs.org) - use the [installer](https://nodejs.org/en/download/)
+* NPM - `$ npm install npm -g`
+* Update Bundler - `$ bundle update`
 
 ## Local Installation
 
 1. Clone this repo, or download it into a directory of your choice.
 2. Inside the directory, run `npm install`.
+3. Then run `bundle update`.
 
 ## Usage
 
