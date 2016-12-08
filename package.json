@@ -4,7 +4,7 @@
   "description": "Faulkner exhibit marketing page",
   "main": "index.js",
   "scripts": {
-    "gulp": "gulp build",
+    "gulp": "gulp",
     "gulp deploy": "gulp deploy"
   },
   "author": "tony-jones",

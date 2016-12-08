@@ -6,8 +6,7 @@ import runSequence from 'run-sequence';
 import browserSync from 'browser-sync';
 import access from 'gulp-accessibility';
 import swPrecache from 'sw-precache';
-//import rename from 'gulp-rename';
-var rename = require("gulp-rename");
+import rename from 'gulp-rename';
 
 const $ = gulpLoadPlugins();
 
@@ -144,10 +143,10 @@ gulp.task('generate-service-worker', function(callback) {
 });
 
 gulp.task('jekyll-build-prod', ['scripts', 'scss'], $.shell.task([ 'jekyll build' ]));
-gulp.task('jekyll-build-dev', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config_dev.yml' ]));
+gulp.task('jekyll-build-dev', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config.yml,_config-dev.yml' ]));
 
 // Default task.
-gulp.task('build', () =>
+gulp.task('default', () =>
   runSequence(
     'scss',
     'jekyll-build-dev',

@@ -19,23 +19,29 @@ To install this project, you'll need the following things installed on your mach
 
 **Development mode**
 
+To build your site run the following command
+
+```shell
+$ gulp
+```
+
 This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting etc.
 
 ```shell
-$ npm run gulp
+$ gulp serve
 ```
 
 **Deploy mode**
 
 You can easily deploy your site build with the command
 ```shell
-$ npm run gulp deploy
+$ gulp deploy
 ```
 
 ## Tests
-
+You can run accessibility test set to WCAG Level AA
 ```shell
-$ npm run gulp accessibility
+$ gulp accessibility
 ```
 
 If you want to run the HTML tests on your local machine please install `gem install html-proofer`. And then run the tests using
