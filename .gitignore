@@ -7,6 +7,7 @@ Gemfile.lock
 .publish/
 css/
 reports/
+validate/
 
 ### Always-ignore files and folders ###
 *.diff
