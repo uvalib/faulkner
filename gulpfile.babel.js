@@ -171,7 +171,8 @@ gulp.task('deploy', () => {
     'css',
     'generate-service-worker',
     'minify-images',
-    'gh-pages'
+    'gh-pages',
+    'jekyll-build-dev' // reset local back to development config after deploy
   )
 });
 
