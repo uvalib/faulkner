@@ -15,7 +15,7 @@ gulp.task('accessibility', function() {
   return gulp.src('./_site/**/*.html')
     .pipe(access({
       force: true,
-      verbose: false,
+      verbose: false, // true: to output error to console; false: output report files only
       options: {
           accessibilityLevel: 'WCAG2AA',
           reportLocation: 'accessibility-reports',
@@ -31,6 +31,7 @@ gulp.task('accessibility', function() {
     .pipe(rename({extname: '.txt'}))
     .pipe(gulp.dest('reports/json'));
 });
+
 
 // Minify the HTML.
 gulp.task('minify-html', () => {
