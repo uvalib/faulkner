@@ -1,12 +1,19 @@
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
 
+    <meta name="description" content="page description">
+    <meta name="keywords" content="page keywords">
+    <meta name="author" content="page author">
+    <meta name="theme-color" content="#f5f5f5">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
 </head>
