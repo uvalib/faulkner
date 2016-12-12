@@ -11,12 +11,13 @@
 
 // Base
 @import "base/_reset";
+@import "base/_global";
 //@import "base/_typography";
 //@import "base/_syntax-highlighting";
 
 // Layout
 @import "layouts/flex-layout-attribute";
-//@import "layouts/_header";
+@import "layouts/_header";
 //@import "layouts/_navigation";
 //@import "layouts/_footer";
 
