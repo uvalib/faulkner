@@ -1,7 +1,7 @@
 body {
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
@@ -10,4 +10,10 @@ main {
 
 #content {
   padding-top: 66px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 80%;
 }
