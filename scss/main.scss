@@ -2,8 +2,9 @@
 
 // Utilities
 //@import "utils/_colors";
-//@import "utils/_variables";
-//@import "utils/_mixins";
+@import "utils/_variables";
+@import "utils/_modular-scale";
+@import "utils/_mixins";
 //@import "utils/_helpers";
 
 // Vendors
@@ -12,7 +13,8 @@
 // Base
 @import "base/_reset";
 @import "base/_global";
-//@import "base/_typography";
+@import "base/_typography";
+
 //@import "base/_syntax-highlighting";
 
 // Layout
@@ -31,41 +33,3 @@
 //@import "pages/_news";
 //@import "pages/_home";
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-// Using media queries with like this:
-// @include media-query($palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "_base";
-@import "_layout";
-@import "_syntax-highlighting";

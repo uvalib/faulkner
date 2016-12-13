@@ -5,14 +5,17 @@
 */
 
 .mega-footer {
-  padding-bottom: 24px;
+  padding: 24px 0px;
 }
+
 .mega-footer--link-list {
   display: block;
   list-style: none;
-  margin-left: 0px;
+  margin-left: 0;
+  padding-left: 0;
 
   a {
     display: block;
   }
+
 }
