@@ -7,20 +7,20 @@
   {% for page in site.pages %}
     {% if page.title %}
       <div class="navigation__item">
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        <a class="navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       </div>
     {% endif %}
   {% endfor %}
 
   <!-- Temporary Navigation Items -->
   <div class="navigation__item">
-    <a href="#">Visit</a>
+    <a class="navigation__link" href="#">Visit</a>
   </div>
   <div class="navigation__item">
-    <a href="#">News</a>
+    <a class="navigation__link" href="#">News</a>
   </div>
   <div class="navigation__item">
-    <a href="#">Book a tour</a>
+    <a class="btn btn--primary" href="#">Book a tour</a>
   </div>
   
  

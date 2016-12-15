@@ -1,0 +1,65 @@
+/*
+==========================================================
+                     Buttons
+==========================================================
+*/
+
+.btn {
+  display: inline-block;
+  position: relative;
+  height: 47px;
+  padding: 0 2rem;
+  line-height: 47px;
+  transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  text-decoration: none;
+  font-size: 16px;
+  // font-smoothing:
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #fff;
+  border-radius: 2.5rem;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, .05);
+  transition: .4s cubic-bezier(.215, .61, .355, 1);
+}
+
+.btn:hover {
+  transform: translate3d(0, -2px, 0);
+  color: white;
+}
+
+.btn:hover:after {
+  box-shadow: 0 4px 9px rgba(0, 0, 0, .1);
+  transform: translateZ(0) scale(1.03);
+}
+
+.btn:active:after {
+  box-shadow: 0 4px 9px rgba(0, 0, 0, .15);
+  transform: translateZ(0) scale(1.06);
+}
+
+.btn--primary {
+  font-weight: 700;
+  color: #fff;
+}
+
+.btn--primary:after {
+  background: #00b1cb;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+}
+
+.btn--primary:hover:after {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .25)
+}
+
+.btn--seconday {
+  color: #8e8e8e;
+  font-weight: 700;
+}
