@@ -7,6 +7,7 @@
 
     <a href="#content" class="skip-nav">Skip to main content</a>
 
+    {% include navigation.html %}
     {% include header.html %}
 
     <main id="content" role="main">
@@ -17,14 +18,14 @@
 
     {% include footer.html %}
 
-  <script async href="{{ site.baseurl }}/scripts/main.min.js"></script>
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register("sw.js").then(function() {
-      console.log("Service Worker Registered");
-    });
-  }
-  </script>
+    <script async href="{{ site.baseurl }}/scripts/main.min.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register("sw.js").then(function() {
+          console.log("Service Worker Registered");
+        });
+      }
+    </script>
   </body>
 
 </html>

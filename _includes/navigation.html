@@ -1,0 +1,26 @@
+<nav class="headroom navigation" layout="row center-left" role="navigation" aria-label="primary menu">
+ 
+  <div self="left">
+    <a href="{{ site.baseurl }}/"><img src="images/logo.svg" class="navigation__logo" alt="University of Virginia Library logo"></a>
+  </div>
+  
+  {% for page in site.pages %}
+    {% if page.title %}
+      <div class="navigation__item">
+        <a class="navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  <!-- Temporary Navigation Items -->
+  <div class="navigation__item">
+    <a class="navigation__link" href="#">Visit</a>
+  </div>
+  <div class="navigation__item">
+    <a class="navigation__link" href="#">News</a>
+  </div>
+  <div class="navigation__item">
+    <a class="btn btn--primary" href="#">Book a tour</a>
+  </div>
+  
+</nav>

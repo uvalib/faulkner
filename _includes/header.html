@@ -1,53 +1,9 @@
-<nav class="headroom navigation" layout="row center-left" role="navigation" aria-label="primary menu">
- 
-  <div self="left">
-    <a href="{{ site.baseurl }}/"><img src="images/logo.svg" class="navigation__logo" alt="University of Virginia Library logo"></a>
-  </div>
-  
-  {% for page in site.pages %}
-    {% if page.title %}
-      <div class="navigation__item">
-        <a class="navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      </div>
-    {% endif %}
-  {% endfor %}
-
-  <!-- Temporary Navigation Items -->
-  <div class="navigation__item">
-    <a class="navigation__link" href="#">Visit</a>
-  </div>
-  <div class="navigation__item">
-    <a class="navigation__link" href="#">News</a>
-  </div>
-  <div class="navigation__item">
-    <a class="btn btn--primary" href="#">Book a tour</a>
-  </div>
-  
-</nav>
-
-<style>
-  .item {
-    color: hsla(0,0%,100%,.6);
-    outline: 1px dotted #262626;
-    outline-offset: 0;
-    min-width: 5em;
-    min-height: 556px;
-    max-width: 100%;
-    line-height: 1.5rem;
-    padding: .5rem;
-    text-align: left;
-    font-size: 1.125rem;
-    font-weight: 700;
-    transition: background-image .3s ease;
-    position: relative;
-    background-color: #03a9f4;
-  }
-</style>
-
 <header class="header" role="banner">
   <div layout="row stretch-stretch">
-    <div class="header__left-section">1</div>
-    <div class="header__right-section">
+    <div layout="row center-center" class="header__left-section">
+      <img src="images/banner.png" alt="poster for faulkner exhibition">
+    </div>
+    <div layout="column center-left" class="header__right-section">
       <span class="header__label">exhibition</span>
       <h1 class="header__title">Faulkner: Life and Works</h1>
       <p class="header__supporting-text">

@@ -4,18 +4,35 @@
 ==========================================================
 */
 
-.mega-footer {
-  padding: 24px 0px;
+.footer {
+  height: 220px;
 }
 
-.mega-footer--link-list {
-  display: block;
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
+.footer__logo {
+  width: 140px;
+}
 
-  a {
-    display: block;
+.footer__link {
+  font-family: unquote(map-get($headingtype, font-family));
+  font-size: 34px;
+  color: #222223;
+  margin-bottom: 10px;
+  
+  &:hover {
+    color: #00C0B3;
   }
+}
 
+.footer__label {
+  color: #7C7C7C;
+  font-size: 16px;
+}
+
+.footer__flex-container {
+  height: 300px;
+   border-top: 1px solid #DDDDDD;
+}
+
+.footer__contact--section {
+  padding-left: 100px;
 }
