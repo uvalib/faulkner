@@ -1,3 +1,9 @@
+/*
+==========================================================
+                    Flex Self Responsive
+==========================================================
+*/
+
 // Adjust media-queries to match your needs and/or add more rules
 @media screen and ( max-width: 64em) {
   [#{$SELF}*="lg-full"] {

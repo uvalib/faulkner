@@ -9,21 +9,84 @@ nav {
   height: 66px;
   background-color: white;
   padding: 0px 24px;
-  box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.08);
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.08);
 }
 
 .navigation__item {
   font-weight: 400;
   margin-left: 2rem;
   color: $headingColour;
-  
   .navigation__link {
     color: $headingColour;
     font-size: 16px;
-
+    line-height: 62px;
+    height: 62px;
+    display: block;
     &:hover {
       color: #00C0B3;
     }
   }
+}
 
+.navigation__logo {
+  vertical-align: text-top;
+  width: 90px;
+}
+
+.header {
+  margin-top: 66px;
+}
+
+.header__left-section {
+  background-color: #F2F2F2;
+  min-height: 556px;
+}
+
+.header__right-section {
+  background-color: #30BFB3;
+  min-height: 556px;
+  padding: 24px;
+}
+
+.header__label {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.header__title {
+  font-size: 45px;
+  color: white;
+  margin-top: 0;
+}
+
+.header__supporting-text {
+  font-size: 21px;
+  color: white;
+}
+
+.header__date {
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+}
+
+.header__location {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+}
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
 }

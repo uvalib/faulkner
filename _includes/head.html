@@ -3,21 +3,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://use.typekit.net/cmv1gpf.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <meta name="description" content="page description">
     <meta name="keywords" content="page keywords">
     <meta name="author" content="page author">
-    <meta name="theme-color" content="#f5f5f5">
+    <meta name="theme-color" content="#26334D">
     <meta name="msapplication-tap-highlight" content="no">
 
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans|Playfair+Display:400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
     <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+    
+    <script src="https://npmcdn.com/headroom.js@0.9.3/dist/headroom.min.js"></script>
 </head>

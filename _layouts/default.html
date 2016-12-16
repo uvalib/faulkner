@@ -5,6 +5,8 @@
 
   <body>
 
+    <a href="#content" class="skip-nav">Skip to main content</a>
+
     {% include header.html %}
 
     <main id="content" role="main">
@@ -15,7 +17,7 @@
 
     {% include footer.html %}
 
-  <link async href="{{ site.baseurl }}/scripts/main.min.js">
+  <script async href="{{ site.baseurl }}/scripts/main.min.js"></script>
   <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register("sw.js").then(function() {

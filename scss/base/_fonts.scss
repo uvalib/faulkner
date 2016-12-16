@@ -1,0 +1,57 @@
+/*
+==========================================================
+                     Fonts
+==========================================================
+*/
+
+/* font-family: "Playfair Display"; */
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/playfair-display/playfair-display-bold-webfont.eot'); /* IE9 Compat Modes */
+  src: local('Playfair Display'), local('PlayfairDisplay-Bold'),
+       url('../fonts/playfair-display/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/playfair-display/playfairdisplay-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/playfair-display/playfairdisplay-bold-webfont.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/playfair-display/playfairdisplay-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/playfair-display/playfairdisplay-bold-webfont.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+}
+
+/* font-family: "SofiaPro"; */
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/sofia-pro/sofiaproregular-webfont.eot');
+    src: url('../fonts/sofia-pro/sofiaproregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sofia-pro/sofiaproregular-webfont.woff2') format('woff2'),
+         url('../fonts/sofia-pro/sofiaproregular-webfont.woff') format('woff'),
+         url('../fonts/sofia-pro/sofiaproregular-webfont.ttf') format('truetype'),
+         url('../fonts/sofia-pro/sofiaproregular-webfont.svg#SofiaProRegular') format('svg');  
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/sofia-pro/sofiapromedium-webfont.eot');
+    src: url('../fonts/sofia-pro/sofiapromedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sofia-pro/sofiapromedium-webfont.woff2') format('woff2'),
+         url('../fonts/sofia-pro/sofiapromedium-webfont.woff') format('woff'),
+         url('../fonts/sofia-pro/sofiapromedium-webfont.ttf') format('truetype'),
+         url('../fonts/sofia-pro/sofiapromedium-webfont.svg#SofiaProMedium') format('svg');
+}
+
+
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/sofia-pro/sofiaprobold-webfont.eot');
+    src: url('../fonts/sofia-pro/sofiaprobold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sofia-pro/sofiaprobold-webfont.woff2') format('woff2'),
+         url('../fonts/sofia-pro/sofiaprobold-webfont.woff') format('woff'),
+         url('../fonts/sofia-pro/sofiaprobold-webfont.ttf') format('truetype'),
+         url('../fonts/sofia-pro/sofiaprobold-webfont.svg#SofiaProBold') format('svg');
+}

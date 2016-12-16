@@ -1,7 +1,7 @@
-<nav class="navigation" layout="row center-left" role="navigation" aria-label="primary menu">
+<nav class="headroom navigation" layout="row center-left" role="navigation" aria-label="primary menu">
  
   <div self="left">
-    <a href="{{ site.baseurl }}/" class="nav-logo">Faulkner</a>
+    <a href="{{ site.baseurl }}/"><img src="images/logo.svg" class="navigation__logo" alt="University of Virginia Library logo"></a>
   </div>
   
   {% for page in site.pages %}
@@ -23,6 +23,42 @@
     <a class="btn btn--primary" href="#">Book a tour</a>
   </div>
   
- 
-    
 </nav>
+
+<style>
+  .item {
+    color: hsla(0,0%,100%,.6);
+    outline: 1px dotted #262626;
+    outline-offset: 0;
+    min-width: 5em;
+    min-height: 556px;
+    max-width: 100%;
+    line-height: 1.5rem;
+    padding: .5rem;
+    text-align: left;
+    font-size: 1.125rem;
+    font-weight: 700;
+    transition: background-image .3s ease;
+    position: relative;
+    background-color: #03a9f4;
+  }
+</style>
+
+<header class="header" role="banner">
+  <div layout="row stretch-stretch">
+    <div class="header__left-section">1</div>
+    <div class="header__right-section">
+      <span class="header__label">exhibition</span>
+      <h1 class="header__title">Faulkner: Life and Works</h1>
+      <p class="header__supporting-text">
+        An exhibition on the life and works of William Faulkner, from the 
+        holdings of the Albert and Shirley Small Special Collections Library.
+      </p>
+      <div class="header__date">Feb 6, 2017 - July 7, 2017</div>
+      <p class="header__location">
+        Main Gallery, Harrison Institute and Small Special <br>
+        Collection Library, University of Virginia
+      </p>
+    </div>
+  </div>
+</header>

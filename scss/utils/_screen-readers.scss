@@ -1,0 +1,39 @@
+/*
+==========================================================
+                     Screen Reader
+==========================================================
+*/
+
+.skip-nav:focus {
+    top: 0px;
+    background: #f5f5f5;
+    outline: 0;
+    border: 1px solid rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    -webkit-transition: top .01s ease-in, background .05s linear;
+    transition: top .01s ease-in, background .05s linear;
+}
+.skip-nav {
+    padding: 10px;
+    font-size: 15px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    color: black;
+    background: transparent;
+    -webkit-transition: top .01s ease-out, background .01s linear;
+    transition: top .01s ease-out, background .01s linear;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}

@@ -1,8 +1,94 @@
-html {
+/*
+==========================================================
+                     Resets
+==========================================================
+*/
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-*, 
-*:before, 
-*:after {
-  box-sizing: inherit;
+
+// Prevents some mobile browsers from zooming fonts
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body,
+button {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+// Rest inconsistent browser interpretations of line height
+body {
+  margin: 0;
+  font: 16px/1 sans-serif;
+}
+
+// Reset margin and padding for all browsers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+figure,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+// Fixes the main tag being unsupported in some browsers
+main,
+li {
+  display: block;
+}
+
+// This corrects some browsers defaulting to bolder
+strong {
+  font-weight: bold;
+}
+
+// Fixes button not inheriting text color in most browsers
+a,
+button {
+  color: inherit;
+  transition: .3s;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+
+// Firefox adds focus inside buttons that cause them to display larger than expected
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+// Removes user agent default outline that appears when focusing interactive
+// elements. For accessibility make sure you have custom focus state styles set
+// everywhere.
+:focus {
+  outline: 0;
+}
+
+// Responsive Images. "Border" fixes images within links gaining a border in IE 8, 9 and 10.
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
 }
