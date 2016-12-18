@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to Faulkner!"
 date:   2016-09-08 11:56:39 +0300
 categories: jekyll update
 ---

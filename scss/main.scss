@@ -1,22 +1,20 @@
 @charset "utf-8";
 
 // Utilities
-//@import "utils/_colors";
+@import "utils/_helpers";
 @import "utils/_variables";
 @import "utils/_modular-scale";
 @import "utils/_mixins";
 @import "utils/_screen-readers";
-//@import "utils/_helpers";
 
 // Vendors
-//@import "vendors/_normalize";
+
 
 // Base
 @import "base/_reset";
 @import "base/_global";
 @import "base/_typography";
 @import "base/_fonts";
-//@import "base/_syntax-highlighting";
 
 // Layout
 @import "layouts/flex-layout-attribute";
@@ -24,13 +22,10 @@
 @import "layouts/_footer";
 
 // Components
-//@import "components/_fonts";
-//@import "components/_links";
 @import "components/_buttons";
-//@import "components/_navbar";
-//@import "components/_tables";
 
 // Pages
-//@import "pages/_news";
-//@import "pages/_home";
+@import "pages/_images";
+@import "pages/_news";
+@import "pages/_home";
 

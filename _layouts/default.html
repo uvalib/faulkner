@@ -8,8 +8,11 @@
     <a href="#content" class="skip-nav">Skip to main content</a>
 
     {% include navigation.html %}
-    {% include header.html %}
 
+    {% if page.url == "/" %}
+      {% include header.html %}
+    {% endif %}
+    
     <main id="content" role="main">
       <div class="container">
         {{ content }}
