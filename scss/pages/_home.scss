@@ -11,11 +11,22 @@
   }
 }
 
-.gallery-information {
+.gallery-info {
   background-color: #26334D;
+  padding-bottom: 40px;
 }
 
 .gallery-news {
   background-color: #F2F2F2;
+  padding-bottom: 40px;
 }
 
+.gallery-news__item {
+  background-color: red;
+  border: 1px solid black;
+}
+
+.gallery-info__item {
+  background-color: grey;
+  border: 1px solid black;
+}
