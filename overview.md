@@ -1,7 +1,7 @@
 --- 
 layout: page 
-title: About 
-permalink: /about/ 
+title: Overview 
+permalink: /overview/ 
 ---
 
 <section id="baseline">
