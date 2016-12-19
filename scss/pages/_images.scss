@@ -1,5 +1,10 @@
+.page__content {
+  padding-top: 100px;
+}
+
 .page__quote {
   font-size: 28px;
+  line-height: 1.5;
   margin: 0 auto;
   padding-top: 0px;
   text-align: center;
@@ -24,10 +29,6 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
-}
-
-.image__info {
-
 }
 
 .image__media {

@@ -13,10 +13,8 @@ permalink: /about/
       collections at the University of Virginia – this exhihibition includes manuscripts 
       alongside first editions and key archival documents.  The novelist’s life is narrated 
       through the personae he inhabited: artist, aviator, screenwriter, Nobel prizewinner, 
-      white southerner, and UVA writer-in-residence, and more . Die-hard fans, the general 
+      white southerner, and UVA writer-in-residence, and more. Die-hard fans, the general 
       public, and even the Faulkner-phobic will find the unexpected.</p>
-      oluptas fuga, quos, mollitia incidunt do officia facilis. molestiae consequat excepturi
-        laborum perferendis tempor minim eiusmod minim minus quia&nbsp;sint.</p>
     </div>
   </div>
   <div class="section typeset">
