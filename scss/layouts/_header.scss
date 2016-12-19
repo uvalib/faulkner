@@ -45,8 +45,10 @@ nav {
 .header__right-section {
   background-color: #30BFB3;
   min-height: 556px;
-  padding-left: 40px;
-  padding-right: 40px;
+}
+
+.header__content {
+  padding: 30px;
 }
 
 .header__label {
