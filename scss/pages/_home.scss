@@ -22,6 +22,30 @@
   background-color: white;
   border-radius: 3px;
   margin: 10px;
-  padding: 15px;
-  
+  padding: 15px; 
+}
+
+.gallery-info__title {
+  font-size: 16px;
+  color: #1A1A1A;
+}
+
+.gallery-info__blurb {
+  font-size: 14px;
+  color: #1A1A1A;
+  line-height: 1.5;
+}
+
+.gallery-info__action {
+  color: #26334D;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.gallery-info__hours {
+  font-family: unquote(map-get($bodytype, font-family));
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 0;
 }
