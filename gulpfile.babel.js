@@ -65,12 +65,11 @@ gulp.task('scripts', () => {
   gulp.src([
     // Note: You need to explicitly list your scripts here in the right order
     //       to be correctly concatenated
-    './_scripts/headroom.js',
-    './_scripts/main.js',
-   
+    './_scripts/vendor/headroom.js',
+    './_scripts/main.js'
   ])
+    // .pipe($.babel())
     .pipe($.concat('main.min.js'))
-    .pipe($.babel())
     .pipe($.uglify({preserveComments: 'some'}))
     .pipe(gulp.dest('scripts'));
 });
