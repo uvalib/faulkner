@@ -19,7 +19,7 @@
 
     {% include footer.html %}
 
-    <script async href="{{ site.baseurl }}/scripts/main.min.js"></script>
+    <script async src="{{ site.baseurl }}/scripts/main.min.js"></script>
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register("sw.js").then(function() {
