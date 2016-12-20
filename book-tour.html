@@ -4,7 +4,7 @@ title: Book a tour
 permalink: /book-tour/ 
 exclude_from_nav: true
 ---
-
+<div style="">
 <header class="page__header">
   <h1 class="page__title">
     <div class="page__quote">
@@ -16,3 +16,38 @@ exclude_from_nav: true
   </h1>
 </header>
 
+<div layout="row center-center">
+  <form id="tour-request-form" class="tour-form" name="tour-request-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your full name" aria-required="true"/>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" placeholder="434-555-5555" aria-required="false"/>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" placeholder="email@example.com" aria-required="true"/>
+    </div>
+    <div class="form-group">
+      <label for="name">Affiliation</label>
+      <input type="text" id="name" placeholder="School or department" aria-required="true"/>
+    </div>
+    <div class="form-group">
+      <label for="name">Group size</label>
+      <input type="text" id="name" placeholder="How many people" aria-required="true"/>
+    </div>
+    <div class="form-group">
+      <label for="name">Desired Tour Date</label>
+      <input type="text" id="name" placeholder="When are you coming" aria-required="true"/>
+    </div>
+    <div class="form-group">
+      <label for="name">Special accommodations</label>
+      <input type="text" id="name" placeholder="Any accommodations needed?" aria-required="true"/>
+    </div>
+    <div class="form-group form-action">
+      <a href="#" class="btn btn--primary btn--form">Submit Request</a>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,31 @@
+.tour-form {
+  background: #F2F2F2;
+  border-radius: 8px;
+  width: 500px;
+}
+
+label {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+input {
+  border: 0;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-size: 21px;
+  font-weight: 500;
+  background: #f2f2f2;
+  width: 100%;
+}
+
+.form-group {
+  border-bottom: 1px solid rgba(20,31,51,.1);
+}
+
+.form-action {
+  height: 75px;
+}
