@@ -65,6 +65,8 @@ gulp.task('scripts', () => {
   gulp.src([
     // Note: You need to explicitly list your scripts here in the right order
     //       to be correctly concatenated
+    './_scripts/vendor/anime.js',
+    './_scripts/vendor/scroll-monitor.js',
     './_scripts/vendor/headroom.js',
     './_scripts/main.js'
   ])

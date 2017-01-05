@@ -10,17 +10,20 @@
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.10);
   margin: 10px;
   padding: 15px;
+  // padding-bottom: 0;
   transition: all 250ms cubic-bezier(.02, .01, .47, 1);
 
   &:hover {
-    box-shadow: 0 40px 40px rgba(0,0,0,.16);
-    transform: translate(0,-20px);
+    box-shadow: 0 25px 25px rgba(0,0,0,.16);
+    transform: translate(0,-15px);
   }
 }
 .gallery-news__label {
   font-size: 14px;
   color: #E3AD22;
   font-weight: 500;
+  line-height: 1.5;
+  padding-bottom: 5px;
 }
 
 .gallery-news__title {

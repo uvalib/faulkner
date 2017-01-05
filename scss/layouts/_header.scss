@@ -24,7 +24,7 @@ nav {
     height: 62px;
     display: block;
     &:hover {
-      color: #00C0B3;
+      color: #E3AD22;
     }
   }
 }
@@ -44,7 +44,8 @@ nav {
 }
 
 .header__right-section {
-  background-color: #30BFB3;
+  // background-color: #30BFB3;
+  background-color: #F9D567;
   min-height: 556px;
 }
 
@@ -53,32 +54,33 @@ nav {
 }
 
 .header__label {
-  color: white;
+  color: #333D43;
   font-size: 16px;
+  font-weight: 500;
   text-transform: uppercase;
   margin-top: 0;
 }
 
 .header__title {
   font-size: 45px;
-  color: white;
+  color: #333D43;
   margin-top: 0;
 }
 
 .header__supporting-text {
   font-size: 21px;
-  color: white;
+  color: #333D43;
 }
 
 .header__date {
   font-size: 24px;
-  color: white;
+  color: #333D43;
   font-weight: 500;
 }
 
 .header__location {
   font-size: 16px;
-  color: white;
+  color: #333D43;
   font-weight: 400;
   line-height: 1.5;
 }

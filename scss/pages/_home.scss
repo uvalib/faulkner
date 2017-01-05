@@ -13,7 +13,8 @@
 }
 
 .gallery-info {
-  background-color: #26334D;
+  // background-color: #26334D;
+  background-color: #333D43;
   padding-bottom: 50px;
   padding-top: 20px;
 }
@@ -57,4 +58,96 @@
   font-size: 14px;
   line-height: 1.5;
   padding-top: 0;
+}
+
+// refactor the below
+.content {
+  position: relative;
+  min-height: 300px;
+  overflow-x: hidden;
+}
+
+.block-revealer__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.dual {
+	//width: 90vw;
+	//margin: 8em auto 25vh;
+	position: relative;
+}
+
+.dual__inner {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+}
+
+.dual__half {
+	position: absolute;
+	height: 100%;
+	width: 51%;
+	right: 0;
+	background: url(https://tympanus.net/Development/BlockRevealers/img/4.jpg) no-repeat 50% 0%;
+	background-size: cover;
+}
+
+.dual__content {
+	position: relative;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 500px;
+	padding: 1.5em 2.5em;
+	font-size: 1.75em;
+	line-height: 1.4;
+	color: #8a7c78;
+}
+
+.js .dual__content {
+	opacity: 0;
+	pointer-events: none;
+	transform: translate3d(60px,0,0);
+	transition: opacity 0.55s 0.4s, transform 0.55s 0.4s;
+}
+
+.dual__content.dual__content--show {
+	opacity: 1;
+	pointer-events: visible;
+	transform: translate3d(0,0,0);
+}
+
+.author {
+	margin: 1em 0 0 0;
+	display: block;
+	font-size: 0.65em;
+}
+
+.header__left-section {
+  opacity: 0;
+}
+
+.header__left-section.header__left-section--show {
+  opacity: 1;
+}
+
+.js .header__right-section {
+	opacity: 0;
+  z-index: 1;
+	pointer-events: none;
+	transform: translate3d(60px,0,0);
+	transition: opacity 0.55s 0.4s, transform 0.55s 0.4s;
+}
+.header__right-section.header__right-section--show {
+  opacity: 1;
+	pointer-events: visible;
+	transform: translate3d(0,0,0);
 }

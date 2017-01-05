@@ -52,8 +52,8 @@ If you want to run the HTML tests on your local machine please install `gem inst
 $ htmlproofer ./_site
 ```
 
-
 [license-image]: https://img.shields.io/badge/license-ISC-blue.svg
 [license-url]: https://github.com/uvalib/faulkner/blob/master/LICENSE
 [travis-image]: https://travis-ci.org/uvalib/faulkner.svg?branch=master
 [travis-url]: https://travis-ci.org/uvalib/faulkner
+
