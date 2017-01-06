@@ -28,15 +28,28 @@ permalink: /overview/
       time on Grounds.</p>
       <h6>Visitor Policy</h6>
       <p>To enhance the experience of all guests and to protect our collections on display, 
-      please note the following policies: No food or drinks allowed in the Main Gallery, 
-      the Flowerdew Hundred Gallery, or the Declaring Independence Gallery Photography is 
-      permitted for personal, noncommercial use only. Flash photography, tripods, and 
-      other photographic equipment, including selfie-sticks, are not permitted in any exhibition gallery.
-      Low light levels in the exhibition galleries protect the unique materials on display from fading 
-      and discoloration. Light damage is both cumulative and permanent, and we strive to balance an 
-      enjoyable experience for our visitors with conditions that allow us to preserve our collections 
-      for generations. Please note: large print versions of exhibition text are available in each gallery.
-      We appreciate your participation in the care of our collections and hope you enjoy your visit.</p>
+      please note the following policies: </p>
+      <ul>
+        <li>
+          No food or drinks allowed in the Main Gallery, 
+          the Flowerdew Hundred Gallery, or the Declaring Independence Gallery 
+        </li>
+        <li>
+          Photography is permitted for personal, noncommercial use only. Flash 
+          photography, tripods, and other photographic equipment, including selfie-sticks, 
+          are not permitted in any exhibition gallery.
+        </li>
+        <li>
+          Low light levels in the exhibition galleries protect the unique materials on display 
+          from fading and discoloration. Light damage is both cumulative and permanent, and 
+          we strive to balance an enjoyable experience for our visitors with conditions that 
+          allow us to preserve our collections for generations.
+        </li>
+      </ul>
+      <p>
+      Please note: large print versions of exhibition text are available in each gallery.
+      We appreciate your participation in the care of our collections and hope you enjoy your visit.
+      </p>
     </div>
   </div>
 </section>

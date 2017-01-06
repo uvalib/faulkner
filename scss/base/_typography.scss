@@ -106,9 +106,10 @@ a {
     li {
       font-feature-settings: 'kern', 'onum', 'liga';
       margin-left: 2rem;
+      display: list-item;
 
       @include breakpoint(break-1) {
-        margin-left: 0;
+        margin-left: 20;
       }
 
       ol, ul {
