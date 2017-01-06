@@ -11,7 +11,7 @@ permalink: /overview/
       <p class="caption">An exhibition on the life and works of William Faulkner</p>
       <h6>The Exhibition</h6>
       <p>Surveying one of the great archives of American literature – the William Faulkner 
-      collections at the University of Virginia – this exhihibition includes manuscripts 
+      collections at the University of Virginia – this exhibition includes manuscripts 
       alongside first editions and key archival documents.  The novelist’s life is narrated 
       through the personae he inhabited: artist, aviator, screenwriter, Nobel prizewinner, 
       white southerner, and UVA writer-in-residence, and more. Die-hard fans, the general 
@@ -21,11 +21,12 @@ permalink: /overview/
   <div class="section typeset">
     <div class="column column--main column--right">
       <h6>Biography</h6>
-      <p>Faulkner, who won the Nobel Prize for Literature in 1949 among other major awards, 
-      came to the University in 1957 and 1958 for two terms as its first writer-in-residence 
-      and remains a prominent literary figure here. UVA’s Albert and Shirley Small Special 
-      Collections Library holds a large repository of his papers and documentation of his 
-      time on Grounds.</p>
+      <p>William Faulkner, who won the 1949 Nobel Prize for Literature, came to Charlottesville 
+      in 1957 to serve as UVA's first Writer-in-Residence, and remained at the University until 
+      his death in 1962. The Albert and Shirley Small Special Collections Library holds Faulkner's 
+      papers, as well as dozens of related collections that document Faulkner's works and life, 
+      including his time on Grounds.
+      </p>
       <h6>Visitor Policy</h6>
       <p>To enhance the experience of all guests and to protect our collections on display, 
       please note the following policies: </p>
