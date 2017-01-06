@@ -1,6 +1,6 @@
-<nav class="headroom navigation" layout="row center-left" role="navigation" aria-label="primary menu">
+<nav layout="row center-center" class="headroom navigation" role="navigation" aria-label="primary menu">
  
-  <div self="left">
+  <div class="logo" self="left">
     <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" class="navigation__logo" alt="University of Virginia Library logo"></a>
   </div>
   
@@ -15,7 +15,7 @@
     <a class="navigation__link" href="https://www.google.com/maps/place/Albert+and+Shirley+Small+Special+Collections+Library/@38.036127,-78.5079867,17z/data=!3m1!4b1!4m5!3m4!1s0x89b386458e1c6161:0x1ff18c5351c984f8!8m2!3d38.036127!4d-78.505798">Visit</a>
   </div>
   <div class="navigation__item">
-    <a class="{% if page.title == "Book a tour" %}active {% endif %} btn btn--primary" href="{{ site.baseurl }}/book-tour" aria-label="Book a Tour">Book a tour</a>
+    <a class="{% if page.title == "Book a tour" %}active {% endif %} btn btn--primary btn--tour" href="{{ site.baseurl }}/book-tour" aria-label="Book a Tour">Book a tour</a>
   </div>
   
 </nav>

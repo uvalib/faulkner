@@ -36,3 +36,16 @@
 .footer__contact--section {
   padding-left: 100px;
 }
+
+@media screen and (max-width: 60em) {
+  .footer__right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 40em) {
+.footer__contact--section {
+    padding-left: 10px;
+    padding-top: 35px;
+  }
+}

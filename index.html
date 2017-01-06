@@ -5,8 +5,8 @@ layout: default
 <section class="gallery-info" aria-labelledby="information">
   <h2 id="information" class="section__heading light">Gallery information</h2>
   <div class="container">
-    <div layout="rows stretch-center">
-      <div href="#" class="gallery-info__item" self="size-x1">
+    <div layout="rows stretch-center sm-column">
+      <div class="gallery-info__item" self="size-1of2 sm-full">
         <div class="gallery-info__title">Visit the exhibition</div>
         <div class="gallery-info__blurb">
           <div class="gallery-info__hours">
@@ -16,11 +16,11 @@ layout: default
           </div>
         </div>
         <div class="gallery-info__action">
-          <a href="https://www.google.com/maps/place/Albert+and+Shirley+Small+Special+Collections+Library/@38.036127,-78.5079867,17z/data=!3m1!4b1!4m5!3m4!1s0x89b386458e1c6161:0x1ff18c5351c984f8!8m2!3d38.036127!4d-78.505798">Get directions</a>
+          <a href="https://www.google.com/maps/place/Albert+and+Shirley+Small+Special+Collections+Library/@38.036127,-78.5079867,17z/data=!3m1!4b1!4m5!3m4!1s0x89b386458e1c6161:0x1ff18c5351c984f8!8m2!3d38.036127!4d-78.505798">Directions</a>
           <a href="http://www.virginia.edu/parking/visitor/generalvisitors.html" class="action__secondary">Find Parking</a>
         </div>
       </div>
-      <div href="#" class="gallery-info__item" self="size-x1">
+      <div class="gallery-info__item" self="size-1of2 sm-full">
         <div class="gallery-info__title">Bring your group on a tour</div>
         <div class="gallery-info__blurb">
           Schedule a private tour for you group or class. Private tours can be taylored based on your group’s needs.
@@ -29,9 +29,7 @@ layout: default
           <a href="{{ site.baseurl }}/book-tour/">Book a tour</a>
         </div>
       </div>
-    </div>
-    <div layout="row stretch-center">
-      <div href="#" class="gallery-info__item" self="size-x1">
+      <div class="gallery-info__item" self="size-1of2 sm-full">
         <div class="gallery-info__title">Exhibit image gallery</div>
         <div class="gallery-info__blurb">
           Enjoy an image gallery of selected objects that we have highlighted by and about William Faulkner. 
@@ -40,7 +38,7 @@ layout: default
           <a href="/images">View images</a>
         </div>
       </div>
-      <div href="#" class="gallery-info__item" self="size-x1">
+      <div class="gallery-info__item" self="size-1of2 sm-full">
         <div class="gallery-info__title">Events</div>
         <div class="gallery-info__blurb">
           <strong>Next up:</strong> Join us at the Harrison Institute and Small Special 
@@ -53,11 +51,12 @@ Collection Library for the opening celebration of Faulkner: Life and Works. Febr
     </div>
   </div>
 </section>
+
 <section class="gallery-news" aria-labelledby="news">
   <h2 id="news" class="section__heading dark">In the news</h2>
   <div class="container">
-    <div layout="row stretch-center">
-      <a href="https://news.library.virginia.edu/2016/11/10/special-collections-faulkner-tour-helps-fourth-year-student-see-the-person-behind-the-author/" class="gallery-news__item" self="size-1of3">
+    <div layout="rows stretch-center sm-column">
+      <a self="sm-full md-half size-1of3" href="https://news.library.virginia.edu/2016/11/10/special-collections-faulkner-tour-helps-fourth-year-student-see-the-person-behind-the-author/" class="gallery-news__item">
         <div class="gallery-news__label">Source: UVA Library News</div>
         <div class="gallery-news__title">Special Collections Faulkner tour helps fourth year scholar see the person behind the author.</div>
         <div class="gallery-news__blurb">
@@ -65,7 +64,7 @@ Collection Library for the opening celebration of Faulkner: Life and Works. Febr
           second place in a Faulkner studies contest with her paper...
         </div>
       </a>
-      <a href="https://news.virginia.edu/content/uva-spearheads-effort-digitally-map-faulkners-literary-world" class="gallery-news__item" self="size-1of3">
+      <a self="sm-full md-half size-1of3" href="https://news.virginia.edu/content/uva-spearheads-effort-digitally-map-faulkners-literary-world" class="gallery-news__item">
         <div class="gallery-news__label">Source: UVA Today</div>
         <div class="gallery-news__title">UVA spearheads effort to digitally map Faulkner's literary world.</div>
         <div class="gallery-news__blurb">
@@ -73,7 +72,7 @@ Collection Library for the opening celebration of Faulkner: Life and Works. Febr
           “Digital Yoknapatawpha” project several years ago...
         </div>
       </a>
-      <a href="https://news.library.virginia.edu/2016/08/16/digital-yoknapatawpha-project-draws-from-special-collections-faulkner-material/" class="gallery-news__item" self="size-1of3">
+      <a self="sm-full md-half size-1of3" href="https://news.library.virginia.edu/2016/08/16/digital-yoknapatawpha-project-draws-from-special-collections-faulkner-material/" class="gallery-news__item">
         <div class="gallery-news__label">Source: UVA Library News</div>
         <div class="gallery-news__title">Digital Yoknapatawpha Project Draws from Special Collections’ Faulkner Material</div>
         <div class="gallery-news__blurb">
@@ -81,27 +80,28 @@ Collection Library for the opening celebration of Faulkner: Life and Works. Febr
           between UVA English Professor...
         </div>
       </a>
-    </div>
-    <div layout="row stretch-center">
-      <a href="https://news.virginia.edu/content/faulkner-father-students-prize-winning-research-reveals-conflicted-portrait" class="gallery-news__item" self="size-1of3">
-        <div class="gallery-news__label">Source: C’Ville Weekly</div>
-        <div class="gallery-news__title">Faulkner As Father: Student's prize winning research reveals conflicted portrait</div>
+      <a self="sm-full md-half size-1of3" href="https://news.library.virginia.edu/2016/11/10/special-collections-faulkner-tour-helps-fourth-year-student-see-the-person-behind-the-author/" class="gallery-news__item">
+        <div class="gallery-news__label">Source: UVA Library News</div>
+        <div class="gallery-news__title">Special Collections Faulkner tour helps fourth year scholar see the person behind the author.</div>
         <div class="gallery-news__blurb">
-          The Arts section of the CVille Weekly features an in-depth article on the Library's Faulkner exhibition.
+          Fourth year student Marcella Sohm took 
+          second place in a Faulkner studies contest with her paper...
         </div>
       </a>
-      <a href="#" class="gallery-news__item" self="size-1of3">
-        <div class="gallery-news__label">Source: C’Ville Weekly</div>
-        <div class="gallery-news__title">UVA Special Collections features original Faulkner printworks</div>
+      <a self="sm-full md-half size-1of3" href="https://news.virginia.edu/content/uva-spearheads-effort-digitally-map-faulkners-literary-world" class="gallery-news__item">
+        <div class="gallery-news__label">Source: UVA Today</div>
+        <div class="gallery-news__title">UVA spearheads effort to digitally map Faulkner's literary world.</div>
         <div class="gallery-news__blurb">
-          The Arts section of the CVille Weekly features an in-depth article on the Library's Faulkner exhibition.
+          UVA English professor Stephen Railton and collaborators from around the country and abroad began the 
+          “Digital Yoknapatawpha” project several years ago...
         </div>
       </a>
-      <a href="#" class="gallery-news__item" self="size-1of3">
-        <div class="gallery-news__label">Source: C’Ville Weekly</div>
-        <div class="gallery-news__title">UVA Special Collections features original Faulkner printworks</div>
+      <a self="sm-full md-half size-1of3" href="https://news.library.virginia.edu/2016/08/16/digital-yoknapatawpha-project-draws-from-special-collections-faulkner-material/" class="gallery-news__item">
+        <div class="gallery-news__label">Source: UVA Library News</div>
+        <div class="gallery-news__title">Digital Yoknapatawpha Project Draws from Special Collections’ Faulkner Material</div>
         <div class="gallery-news__blurb">
-          The Arts section of the CVille Weekly features an in-depth article on the Library's Faulkner exhibition.
+          The UVA Today article, “UVA Spearheads Effort to Digitally Map Faulkner’s Literary World,” features a collaboration 
+          between UVA English Professor...
         </div>
       </a>
     </div>

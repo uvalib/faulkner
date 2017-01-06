@@ -9,6 +9,7 @@ permalink: /overview/
     <div class="single">
       <h1>Faulkner: Life and Works</h1>
       <p class="caption">An exhibition on the life and works of William Faulkner</p>
+      <h6>The Exhibition</h6>
       <p>Surveying one of the great archives of American literature – the William Faulkner 
       collections at the University of Virginia – this exhihibition includes manuscripts 
       alongside first editions and key archival documents.  The novelist’s life is narrated 
@@ -25,16 +26,17 @@ permalink: /overview/
       and remains a prominent literary figure here. UVA’s Albert and Shirley Small Special 
       Collections Library holds a large repository of his papers and documentation of his 
       time on Grounds.</p>
-      <p class="caption sidenote">Courtsey of Special Collections Library, UVA Library</p>
-      <p>Faulkner returned as writer-in-residence in the spring of 1958. The following year, 
-      he worked from a study in Alderman Library as a consultant on contemporary literature 
-      to the library. He was appointed lecturer in American literature in 1960 and divided 
-      his time between Charlottesville and Oxford, Miss., until his death in 1962.</p>
-      <p>To mark the 50th anniversary of Faulkner’s second term as writer-in-residence, 
-      the Special Collections Library hosted an April 4 symposium, “Faulkner in the University: 
-      Then and Now.” An accompanying exhibit—which includes an interactive kiosk featuring video 
-      and audio, along with letters, manuscripts, Faulkner’s typewriter and tweed jacket—can 
-      be seen through Aug</p>
+      <h6>Visitor Policy</h6>
+      <p>To enhance the experience of all guests and to protect our collections on display, 
+      please note the following policies: No food or drinks allowed in the Main Gallery, 
+      the Flowerdew Hundred Gallery, or the Declaring Independence Gallery Photography is 
+      permitted for personal, noncommercial use only. Flash photography, tripods, and 
+      other photographic equipment, including selfie-sticks, are not permitted in any exhibition gallery.
+      Low light levels in the exhibition galleries protect the unique materials on display from fading 
+      and discoloration. Light damage is both cumulative and permanent, and we strive to balance an 
+      enjoyable experience for our visitors with conditions that allow us to preserve our collections 
+      for generations. Please note: large print versions of exhibition text are available in each gallery.
+      We appreciate your participation in the care of our collections and hope you enjoy your visit.</p>
     </div>
   </div>
 </section>
