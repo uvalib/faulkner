@@ -2,6 +2,8 @@
 
 	'use strict';
 
+	MediumLightbox('figure.zoom-effect');
+
 	// Helper vars and functions.
 	function extend(a, b) {
 		for(var key in b) { 

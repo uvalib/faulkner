@@ -4,6 +4,50 @@
 ==========================================================
 */
 
+figure{
+	margin: 0px;
+	position: relative;
+	clear: both;
+	margin: 20px;
+}
+
+figure.left{
+	margin-left: 0;
+}
+
+figure.right{
+	margin-right: 0;
+}
+
+figure.full{
+	margin-left:0;
+	margin-right:0;
+}
+
+.one-third {
+	width: calc(100%/3);
+}
+
+.half {
+	width:50%;
+}
+
+.full {
+	width:100%;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+
+
+/* MediumLightbox style */
+
 .scrollbar-measure {
 	width: 100px;
 	height: 100px;
@@ -12,11 +56,12 @@
 	top: -9999px;
 }
 
-// .img {
-// 	display: block;
-// 	margin: auto;
-// 	max-width: 100%;
-// }
+.img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
 
 .aspectRatioPlaceholder .img {
 	position: absolute;
@@ -25,6 +70,8 @@
 	width: 100%;
 	height: 100%;
 }
+
+
 
 .zoom-effect .img{
 	cursor: pointer;
@@ -46,10 +93,12 @@
 	height: 100%;
 }
 
+
 .zoom-effect .zoomImg {
 	cursor: pointer;
 	cursor: -webkit-zoom-out;
 }
+
 
 .zoom-effect .zoomOverlay.show{
 	opacity: 1;

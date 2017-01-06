@@ -67,7 +67,6 @@ gulp.task('scripts', () => {
     // to be correctly concatenated
     './_scripts/vendor/medium-lightbox.js',
     './_scripts/vendor/anime.js',
-    './_scripts/vendor/scroll-monitor.js',
     './_scripts/vendor/headroom.js',
     './_scripts/main.js'
   ])
