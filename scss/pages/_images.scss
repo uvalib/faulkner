@@ -42,3 +42,33 @@
 .gallery {
   margin-bottom: 80px;
 }
+
+.image__info {
+  padding: 25px;
+  max-width: 500px;
+}
+
+.copyright-notice {
+  padding-top: 35px;
+}
+
+.image__media {
+  img {
+    width: 670px;
+  }
+}
+@media screen and (max-width: 52em) {
+  .reverse-second {
+    flex-direction: column-reverse;
+  }
+  .image__media {
+    margin: 35px 0px 0px 0px;
+  }
+  .image__info {
+    max-width: 500px;
+     padding: 5px;
+  }
+  .page__quote {
+    width: 100%;
+  }
+}
