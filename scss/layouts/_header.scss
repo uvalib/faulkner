@@ -5,6 +5,7 @@
 */
 
 nav {
+  justify-content: inherit !important; //ie10 fix
   position: fixed;
   height: 66px;
   background-color: white;
@@ -51,6 +52,7 @@ nav {
 
 .header__content {
   padding: 30px;
+  width: 100%;
 }
 
 .header__label {
