@@ -240,26 +240,6 @@
 
     rev1.reveal();
 
-    var scrollElemToWatch = document.getElementById('rev-2'),
-      watcher = scrollMonitor.create(scrollElemToWatch, -300),
-      mediaToolbar = document.querySelector('.media__toolbar'),
-      rev2 = new RevealFx(scrollElemToWatch, {
-        revealSettings : {
-          bgcolor: '#2d2c2c',
-          duration: 800,
-          easing: 'easeInOutCirc',
-          coverArea: 12.5,
-          onCover: function(contentEl, revealerEl) {
-            contentEl.style.opacity = 1;
-            mediaToolbar.classList.add('media__toolbar--show');
-          }
-        }
-      });
-
-    watcher.enterViewport(function() {
-      rev2.reveal();
-      watcher.destroy();
-    });
   }
 
 })(window);
