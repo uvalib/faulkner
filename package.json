@@ -7,9 +7,9 @@
     "gulp": "gulp",
     "gulp deploy": "gulp deploy",
     "test-build": "jekyll build --config _config_test.yml",
-    "test-deploy": "rsync -avh --delete _site_test/ uxdev.lib.virginia.edu:/var/www/html/faulkner",
+    "test-deploy": "rsync -avh --delete _site_test/ uxdev.lib.virginia.edu:/var/www/html/faulkner2017",
     "prod-build": "jekyll build --config _config.yml",
-    "prod-deploy": "rsync -avh --delete _site_prod/ static01.lib.virginia.edu:/lib_content47/faulkner"
+    "prod-deploy": "rsync -avh --delete _site_prod/ static01.lib.virginia.edu:/lib_content47/faulkner2017"
   },
   "author": "tony-jones",
   "license": "ISC",
