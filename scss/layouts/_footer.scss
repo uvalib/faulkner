@@ -48,8 +48,11 @@
 }
 
 @media screen and (max-width: 40em) {
-.footer__contact--section {
+  .footer__contact--section {
     padding-left: 10px;
     padding-top: 35px;
+  }
+  .footer__label {
+    margin-bottom: 10px;
   }
 }

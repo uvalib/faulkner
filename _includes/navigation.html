@@ -1,10 +1,13 @@
-<nav layout="row center-center" class="headroom navigation" role="navigation" aria-label="primary menu">
+<nav layout="row center-top" class="headroom navigation" role="navigation" aria-label="primary menu">
  
   <div class="logo" self="left">
     <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/logo.svg" class="navigation__logo" alt="University of Virginia Library logo"></a>
   </div>
   
   <!-- Navigation Items -->
+  <div class="navigation__item">
+    <a class="{% if page.title == "/" %}active {% endif %} navigation__link home__link" href="{{ site.baseurl }}/" aria-label="Exhibition overview">Home</a>
+  </div>
   <div class="navigation__item">
     <a class="{% if page.title == "Overview" %}active {% endif %} navigation__link" href="{{ site.baseurl }}/overview" aria-label="Exhibition overview">Overview</a>
   </div>
@@ -13,6 +16,9 @@
   </div>
   <div class="navigation__item">
     <a class="navigation__link" href="http://www.library.virginia.edu/map/#!/directions/special-collections">Visit</a>
+  </div>
+  <div class="navigation__item">
+    <a class="{% if page.title == "Book a tour" %}active {% endif %} navigation__link tour__link" href="{{ site.baseurl }}/book-tour" aria-label="Book a Tour">Tour</a>
   </div>
   <div class="navigation__item">
     <a class="{% if page.title == "Book a tour" %}active {% endif %} btn btn--primary btn--tour" href="{{ site.baseurl }}/book-tour" aria-label="Book a Tour">Book a tour</a>

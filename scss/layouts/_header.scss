@@ -5,7 +5,7 @@
 */
 
 nav {
-  justify-content: inherit !important; //ie10 fix
+  // justify-content: inherit !important; //ie10 fix
   position: fixed;
   height: 66px;
   background-color: white;
@@ -100,7 +100,47 @@ nav {
   transform: translateY(-100%);
 }
 
+.navigation__item {
+
+  .home__link {
+    display: none;
+  }
+
+  .tour__link {
+    display: none;
+  }
+
+  .btn--tour {
+    display: block;
+    margin-left: -1.5rem;
+  }
+}
+
+
+
+
 @media screen and (max-width: 40em) {
+  .navigation__item {
+
+    .home__link {
+      display: block;
+    }
+
+    .tour__link {
+      display: block;
+    }
+    .btn--tour {
+      display: none;
+    }
+  }
+  nav {
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation__item .navigation__link {
+    font-size: 14px;
+  }
   .logo {
     display: none;
   }
