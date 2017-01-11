@@ -6,6 +6,7 @@
   "scripts": {
     "gulp": "gulp",
     "gulp deploy": "gulp deploy",
+    "gulp production": "gulp production",
     "test-build": "jekyll build --config _config_test.yml",
     "test-deploy": "rsync -avh --delete _site_test/ uxdev.lib.virginia.edu:/var/www/html/faulkner2017",
     "prod-build": "jekyll build --config _config.yml",

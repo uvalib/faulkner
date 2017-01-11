@@ -163,7 +163,19 @@ gulp.task('default', () =>
   )
 );
 
-// Depoly website to gh-pages.
+// Deploy to static01.lib.virginia.edu
+gulp.task('production', () => {
+  runSequence(
+    'scss',
+    'jekyll-build-prod',
+    'minify-html',
+    'css',
+    'generate-service-worker',
+    'minify-images'
+  )
+});
+
+// Deploy website to gh-pages.
 gulp.task('gh-pages', () => {
   return gulp.src('./_site/**/*')
     .pipe($.ghPages());
