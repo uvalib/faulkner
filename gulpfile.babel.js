@@ -1,3 +1,6 @@
+--- 
+---
+
 'use strict';
 
 import gulp from 'gulp';
@@ -144,7 +147,7 @@ gulp.task('generate-service-worker', function(callback) {
   swPrecache.write(path.join(rootDir, 'sw.js'), {
     staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,json}'],
     stripPrefix: rootDir,
-    replacePrefix: '/faulkner'
+    replacePrefix: '{{ site | baseurl }}' 
   }, callback);
 });
 
