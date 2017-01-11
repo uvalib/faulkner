@@ -157,10 +157,11 @@ gulp.task('generate-service-worker-gh-pages', function(callback) {
   }, callback);
 });
 
-gulp.task('jekyll-build-prod', ['scripts', 'scss'], $.shell.task([ 'jekyll build' ]));
+gulp.task('jekyll-build-prod', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config.yml' ]));
+gulp.task('jekyll-build-test', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config-test.yml' ]));
 gulp.task('jekyll-build-dev', ['scripts', 'scss'], $.shell.task([ 'jekyll build --config _config.yml,_config-dev.yml' ]));
 
-// Default task.
+// Default local task.
 gulp.task('default', () =>
   runSequence(
     'scss',
@@ -172,13 +173,8 @@ gulp.task('default', () =>
   )
 );
 
-// Deploy website to gh-pages.
-gulp.task('gh-pages', () => {
-  return gulp.src('./_site/**/*')
-    .pipe($.ghPages());
-});
-
-gulp.task('deploy', () => {
+// Deploy website to static01.
+gulp.task('deploy-to-prod', () => {
   runSequence(
     'scss',
     'jekyll-build-prod',
@@ -186,8 +182,25 @@ gulp.task('deploy', () => {
     'css',
     'generate-service-worker-gh-pages',
     'minify-images',
-    'gh-pages',
-    'jekyll-build-dev' // reset local back to development config after deploy
+    'gh-pages'
+  )
+});
+
+// Deploy website to gh-pages.
+gulp.task('gh-pages', () => {
+  return gulp.src('./_site/**/*')
+    .pipe($.ghPages());
+});
+
+gulp.task('deploy-to-test', () => {
+  runSequence(
+    'scss',
+    'jekyll-build-test',
+    'minify-html',
+    'css',
+    'generate-service-worker-gh-pages',
+    'minify-images',
+    'gh-pages'
   )
 });
 

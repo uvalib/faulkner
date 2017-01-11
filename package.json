@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
-    "gulp deploy": "gulp deploy",
-    "gulp production": "gulp production",
-    "test-build": "jekyll build --config _config_test.yml",
+    "gulp deploy": "gulp deploy-to-test",
+    "gulp production": "gulp deploy-to-prod",
     "test-deploy": "rsync -avh --delete _site_test/ uxdev.lib.virginia.edu:/var/www/html/faulkner2017",
-    "prod-build": "jekyll build --config _config.yml",
     "prod-deploy": "rsync -rltvz --delete _site/ static01.lib.virginia.edu:/lib_content47/faulkner2017"
   },
   "author": "tony-jones",
