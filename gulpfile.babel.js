@@ -137,14 +137,23 @@ gulp.task('serve', ['jekyll-build-dev'], () => {
   gulp.watch('_scripts/**/*.js', ['scripts']);
 });
 
-gulp.task('generate-service-worker', function(callback) {
+gulp.task('generate-service-worker-production', function(callback) {
   var path = require('path');
   var rootDir = '_site';
 
   swPrecache.write(path.join(rootDir, 'sw.js'), {
     staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,json}'],
-    stripPrefix: rootDir
-    // replacePrefix: '/faulkner'
+  }, callback);
+});
+
+gulp.task('generate-service-worker-gh-pages', function(callback) {
+  var path = require('path');
+  var rootDir = '_site';
+
+  swPrecache.write(path.join(rootDir, 'sw.js'), {
+    staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,json}'],
+    stripPrefix: rootDir,
+    replacePrefix: '/faulkner'
   }, callback);
 });
 
@@ -158,22 +167,10 @@ gulp.task('default', () =>
     'jekyll-build-dev',
     'minify-html',
     'css',
-    'generate-service-worker',
+    'generate-service-worker-production',
     'minify-images'
   )
 );
-
-// Deploy to static01.lib.virginia.edu
-gulp.task('production', () => {
-  runSequence(
-    'scss',
-    'jekyll-build-prod',
-    'minify-html',
-    'css',
-    'generate-service-worker',
-    'minify-images'
-  )
-});
 
 // Deploy website to gh-pages.
 gulp.task('gh-pages', () => {
@@ -187,7 +184,7 @@ gulp.task('deploy', () => {
     'jekyll-build-prod',
     'minify-html',
     'css',
-    'generate-service-worker',
+    'generate-service-worker-gh-pages',
     'minify-images',
     'gh-pages',
     'jekyll-build-dev' // reset local back to development config after deploy
