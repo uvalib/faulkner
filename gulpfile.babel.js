@@ -144,7 +144,7 @@ gulp.task('generate-service-worker-production', function(callback) {
   swPrecache.write(path.join(rootDir, 'sw.js'), {
     staticFileGlobs: [rootDir + '/**/*.{js,html,css,png,jpg,gif,json}'],
     stripPrefix: rootDir,
-    replacePrefix: '/faulkner'
+    replacePrefix: '/'
   }, callback);
 });
 
