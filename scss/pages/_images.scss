@@ -57,6 +57,11 @@
     width: 670px;
   }
 }
+
+.image__info { 
+  align-self: center;
+}
+
 @media screen and (max-width: 52em) {
   .reverse-second {
     flex-direction: column-reverse;
@@ -66,7 +71,7 @@
   }
   .image__info {
     max-width: 500px;
-     padding: 5px;
+    padding: 5px;
   }
   .page__quote {
     width: 100%;
