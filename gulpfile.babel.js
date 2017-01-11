@@ -180,9 +180,8 @@ gulp.task('deploy-to-prod', () => {
     'jekyll-build-prod',
     'minify-html',
     'css',
-    'generate-service-worker-gh-pages',
-    'minify-images',
-    'gh-pages'
+    'generate-service-worker-production',
+    'minify-images'
   )
 });
 
