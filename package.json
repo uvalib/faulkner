@@ -7,7 +7,6 @@
     "gulp": "gulp",
     "gulp deploy": "gulp deploy-to-test",
     "gulp deploy-to-prod": "gulp deploy-to-prod",
-    "test-deploy": "rsync -rltvz --delete _site_test/ uxdev.lib.virginia.edu:/var/www/html/faulkner2017",
     "prod-deploy": "rsync -rltvz --delete _site/ static01.lib.virginia.edu:/lib_content47/faulkner2017"
   },
   "author": "tony-jones",

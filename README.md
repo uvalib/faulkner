@@ -1,7 +1,18 @@
-# faulkner
+# Faulkner Exhibition
 
 [![license][license-image]][license-url] [![Build Status][travis-image]][travis-url]
 > Faulkner exhibit marketing page
+
+## Credits
+
+* Anthony Jones - Project Lead (UX Design and Development) @iamtonybagels
+* Holly Robertson - Content
+
+Open Source Projects
+
+* Stefan Kovac, Flex Layout Attribute
+* Nick Williams - Headroom JS
+* Davide Calignano - Medium Lightbox
 
 ## Prerequisites
 
@@ -36,9 +47,9 @@ $ gulp serve
 
 **Deploy mode**
 
-You can easily deploy your site build with the command
+You can easily deploy your site build to GitHub pages with the command
 ```shell
-$ gulp deploy
+$ gulp deploy-to-test
 ```
 
 ## Tests

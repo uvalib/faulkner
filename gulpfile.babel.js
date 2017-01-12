@@ -32,7 +32,6 @@ gulp.task('accessibility', function() {
     .pipe(gulp.dest('reports/json'));
 });
 
-
 // Minify the HTML.
 gulp.task('minify-html', () => {
   return gulp.src('_site/**/*.html')
@@ -137,6 +136,7 @@ gulp.task('serve', ['jekyll-build-dev'], () => {
   gulp.watch('_scripts/**/*.js', ['scripts']);
 });
 
+// Generate service worker on faulkner2017.lib.virginia.edu
 gulp.task('generate-service-worker-production', function(callback) {
   var path = require('path');
   var rootDir = '_site';
@@ -148,6 +148,7 @@ gulp.task('generate-service-worker-production', function(callback) {
   }, callback);
 });
 
+// Generate service worker on uvalib.github.io/faulkner
 gulp.task('generate-service-worker-gh-pages', function(callback) {
   var path = require('path');
   var rootDir = '_site';
@@ -204,4 +205,3 @@ gulp.task('deploy-to-test', () => {
     'gh-pages'
   )
 });
-
