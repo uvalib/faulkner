@@ -5,8 +5,9 @@
 
 ## Credits
 
-* Anthony Jones - Project Lead (UX Design and Development) @iamtonybagels
+* Anthony Jones - UX Design and Development @iamtonybagels
 * Holly Robertson - Content
+* Jeff Hill - Illustrations
 
 Open Source Projects
 
