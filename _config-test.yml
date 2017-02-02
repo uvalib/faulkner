@@ -39,3 +39,7 @@ exclude: [
   "scss",
   "reports",
 ]
+
+collections:
+  news:
+    output: false

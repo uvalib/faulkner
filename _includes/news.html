@@ -2,38 +2,17 @@
   <h2 id="news" class="section__heading dark">In the news</h2>
   <div class="container">
     <div layout="rows stretch-center">
-      <a self="sm-full md-half size-1of2" href="https://news.virginia.edu/content/exhibition-uncovers-many-faces-william-faulkner?utm_source=UTwitter&utm_medium=social&utm_campaign=news" class="gallery-news__item">
-        <div class="gallery-news__label">Source: UVA Today</div>
-        <div class="gallery-news__title">The many faces of William Faulkner</div>
+      {% for article in site.news %}
+      <a self="sm-full md-half size-1of2" href="{{article.link}}" class="gallery-news__item">
+        <div class="gallery-news__label">{{article.source}}</div>
+        <div class="gallery-news__title">{{article.title}}</div>
         <div class="gallery-news__blurb">
-          It’s been 60 years since William Faulkner first came to the University of Virginia as the Balch Writer-in-Residence. 
-          In February, the University is marking the diamond anniversary of the Nobel Prize-winning writer’s arrival on Grounds...
+          {{article.blurb}}
         </div>
       </a>
-      <a self="sm-full md-half size-1of2" href="http://news.library.virginia.edu/2016/11/10/special-collections-faulkner-tour-helps-fourth-year-student-see-the-person-behind-the-author/" class="gallery-news__item">
-        <div class="gallery-news__label">Source: UVA Library News</div>
-        <div class="gallery-news__title">Special Collections Faulkner tour helps fourth year scholar see the person behind the author.</div>
-        <div class="gallery-news__blurb">
-          Fourth year student Marcella Sohm took 
-          second place in a Faulkner studies contest with her paper...
-        </div>
-      </a>
-      <a self="sm-full md-half size-1of2" href="http://news.virginia.edu/content/uva-spearheads-effort-digitally-map-faulkners-literary-world" class="gallery-news__item">
-        <div class="gallery-news__label">Source: UVA Today</div>
-        <div class="gallery-news__title">UVA spearheads effort to digitally map Faulkner's literary world.</div>
-        <div class="gallery-news__blurb">
-          UVA English professor Stephen Railton and collaborators from around the country and abroad began the 
-          “Digital Yoknapatawpha” project several years ago...
-        </div>
-      </a>
-      <a self="sm-full md-half size-1of2" href="http://news.library.virginia.edu/2016/08/16/digital-yoknapatawpha-project-draws-from-special-collections-faulkner-material/" class="gallery-news__item">
-        <div class="gallery-news__label">Source: UVA Library News</div>
-        <div class="gallery-news__title">Digital Yoknapatawpha Project Draws from Special Collections’ Faulkner Material</div>
-        <div class="gallery-news__blurb">
-          The UVA Today article, “UVA Spearheads Effort to Digitally Map Faulkner’s Literary World,” features a collaboration 
-          between UVA English Professor...
-        </div>
-      </a>
+      {% endfor %}
     </div>
   </div>
 </section>
+
+
