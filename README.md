@@ -76,7 +76,7 @@ $ htmlproofer ./_site
 [travis-url]: https://travis-ci.org/uvalib/faulkner
 
 ## Content Writers
-1. Edit the files in the master branch
+1. Edit the files in the [master branch](https://github.com/uvalib/faulkner/tree/master)
 2. Build will automatically begin
 3. View your changes in production at http://faulkner2017.lib.virginia.edu/
 
