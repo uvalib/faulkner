@@ -46,11 +46,17 @@ This will give you file watching, browser synchronisation, auto-rebuild, CSS inj
 $ gulp serve
 ```
 
-**Deploy mode**
+**Deploy to Development - https://uvalib.github.io/faulkner/**
 
 You can easily deploy your site build to GitHub pages with the command
 ```shell
 $ gulp deploy-to-test
+```
+**Deploy to Production - http://faulkner2017.lib.virginia.edu/**
+
+You can easily deploy your site build to UVA Libraries production server with the command
+```shell
+$ git push origin master
 ```
 
 ## Tests
@@ -68,4 +74,9 @@ $ htmlproofer ./_site
 [license-url]: https://github.com/uvalib/faulkner/blob/master/LICENSE
 [travis-image]: https://travis-ci.org/uvalib/faulkner.svg?branch=master
 [travis-url]: https://travis-ci.org/uvalib/faulkner
+
+## Content Writers
+1. Edit the files in the master branch
+2. Build will automatically begin
+3. View your changes in production at http://faulkner2017.lib.virginia.edu/
 
