@@ -1,3 +1,5 @@
+This exhibition has passed. Content on this site is no longer maintained. Hence the reason this repository is archived.
+
 # Faulkner Exhibition
 
 [![license][license-image]][license-url] [![Build Status][travis-image]][travis-url]
